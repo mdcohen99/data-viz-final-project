@@ -1,0 +1,202 @@
+/* Video styling - modified to ensure overlay appears correctly */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Changed to full width to match your other content */
+    margin: 0 auto;
+    overflow: hidden; /* Prevents content from spilling out */
+  }
+  
+  .main-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 300px; /* Added minimum height to ensure container has space */
+  }
+  
+  .caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 999;
+    text-align: center;
+  }
+  
+  .caption-overlay h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif; /* Match your site fonts */
+    color: white;
+  }
+  
+  .caption-overlay h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif; /* Match your site fonts */
+    color: white;
+  }
+  
+  /* Keep your other CSS styles from your file */
+  p {
+      font-family: Georgia, serif;
+      line-height: 180%;
+  }
+  
+  .chapter {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 2em;
+      text-align: left;
+  }
+  
+  .grimace {
+      margin: 0 auto;
+      width: 100%;
+      padding-left: 30px;
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+  }
+  
+  footer {
+      background-color: black;
+      color: white;
+  }
+  
+  .footer-text {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+  }
+  
+  .caption {
+      font-family: "Montserrat", sans-serif;
+      color: lightgray;
+      font-style: italic;
+      font-size: 12px;
+      padding-left: 30px;
+      padding-bottom: 15px;
+  }
+  
+  .row {
+      font-family: Georgia, serif;
+      text-align: center;
+  }
+  
+  .hero {
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  .link {
+      color: teal
+  }
+
+  .text-box-1 {
+    border: solid #666666 4px;
+    opacity: .7 !important;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 15px !important;
+}
+
+.text-box-2 {
+    border: solid #666666 4px;
+    opacity: .7 !important;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 15px !important;
+}
+
+.text-box-text {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: black
+}
+
+/* Add or modify these styles in wsp_style.css */
+
+/* --- Base Scrollytelling Styles (Keep these) --- */
+body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
+    filter: blur(5px); /* Adjust blur amount as needed */
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 0.7; /* Optional: fade non-focused elements slightly */
+  }
+  
+  .scrollytelling-focus {
+    filter: none !important; /* Ensure focused elements are not blurred */
+    opacity: 1 !important; /* Ensure focused elements are fully visible */
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  /* --- Styling for Text Boxes --- */
+  /* General text box styling */
+  .text-box-1, .text-box-2, .text-box-3, .text-box-4 {
+    border: solid #666666 4px;
+    padding: 40px 20px !important;  /* Base vertical/horizontal padding */
+    margin: 50px 15px !important;   /* Base vertical/horizontal margin */
+    min-height: 150px;          /* Base minimum height */
+    opacity: 0.7 !important;       /* Start semi-transparent */
+    transition: opacity 0.5s ease-in-out; /* Add transition for focus */
+    text-align: center; /* Match your site fonts */
+  }
+  
+  /* Specific adjustments for text-box-1 if needed for longer duration */
+  .text-box-1 {
+    padding-top: 80px !important;    /* More padding for duration */
+    padding-bottom: 80px !important; /* More padding for duration */
+    margin-top: 60px !important;     /* More margin for duration */
+    margin-bottom: 60px !important;  /* More margin for duration */
+    min-height: 200px;             /* More min-height */
+  }
+  
+  /* Ensure focused text boxes are fully opaque */
+  .text-box-1.scrollytelling-focus,
+  .text-box-2.scrollytelling-focus,
+  .text-box-3.scrollytelling-focus,
+  .text-box-4.scrollytelling-focus {
+      opacity: 1 !important;
+  }
+  
+  /* Class for text style inside boxes (from your existing CSS) */
+  .text-box-text {
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 100px !important;
+      font-size: 20px !important;
+      color: black;
+  }
+  
+  /* --- Styling for Charts --- */
+  #chart_1, #chart_2, #chart_3 {
+      margin-top: 5vh; /* Add some vertical space before charts */
+      margin-bottom: 5vh; /* Add some vertical space after charts */
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0.7; /* Start charts slightly faded */
+      /* Ensure images within chart divs scale correctly */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  }
+  
+  /* Ensure focused charts are fully opaque */
+  #chart_1.scrollytelling-focus,
+  #chart_2.scrollytelling-focus,
+  #chart_3.scrollytelling-focus {
+      opacity: 1 !important;
+  }
+  
+ .highlight {
+    color: #cbad05
+ }
+ 
+ a {
+    font-family: "Montserrat";
+ }
