@@ -30,7 +30,7 @@
     margin: 0 0 5px 0;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: "Montserrat", sans-serif; /* Match your site fonts */
+    font-family: "Poppins", sans-serif; 
     color: white;
   }
   
@@ -38,13 +38,13 @@
     margin: 0;
     font-size: 1rem;
     font-style: italic;
-    font-family: "Montserrat", sans-serif; /* Match your site fonts */
+    font-family: "Poppins", sans-serif;
     color: white;
   }
   
   /* Keep your other CSS styles from your file */
   p {
-      font-family: Georgia, serif;
+      font-family: "Source Serif", serif;
       line-height: 180%;
   }
   
@@ -170,6 +170,8 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
   #chart_1, #chart_2, #chart_3 {
       margin-top: 5vh; /* Add some vertical space before charts */
       margin-bottom: 5vh; /* Add some vertical space after charts */
+      margin-left: 10vh;
+      margin-right: 10vh;
       transition: opacity 0.5s ease-in-out;
       opacity: 0.7; /* Start charts slightly faded */
       /* Ensure images within chart divs scale correctly */
@@ -177,6 +179,13 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
           max-width: 100%;
           height: auto;
       }
+  }
+
+  #chart_4, #chart_5 {
+    margin-top: 5vh; 
+      margin-bottom: 5vh; 
+      margin-left: 10vh;
+      margin-right: 10vh;
   }
   
   /* Ensure focused charts are fully opaque */
