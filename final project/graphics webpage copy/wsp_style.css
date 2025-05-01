@@ -114,13 +114,6 @@
     margin: 15px !important;
 }
 
-.text-box-text {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    color: black
-}
-
 /* Add or modify these styles in wsp_style.css */
 
 /* --- Base Scrollytelling Styles (Keep these) --- */
@@ -167,7 +160,7 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
   
   /* Class for text style inside boxes (from your existing CSS) */
   .text-box-text {
-      font-family: "Montserrat", sans-serif !important;
+      font-family: "Poppins", sans-serif !important;
       font-weight: 100px !important;
       font-size: 20px !important;
       color: black;
@@ -199,4 +192,16 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
  
  a {
     font-family: "Montserrat";
+ }
+
+ .static-chart-title {
+    font-family: "Source Serif", serif;
+    font-weight: 700;
+    font-size: 24px;
+ }
+
+ .static-chart-subhead {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
  }
