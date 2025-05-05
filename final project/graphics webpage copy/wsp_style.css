@@ -1,17 +1,17 @@
-/* Video styling - modified to ensure overlay appears correctly */
+
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Changed to full width to match your other content */
+    max-width: 100%; 
     margin: 0 auto;
-    overflow: hidden; /* Prevents content from spilling out */
+    overflow: hidden; 
   }
   
   .main-video {
     display: block;
     width: 100%;
     height: auto;
-    min-height: 300px; /* Added minimum height to ensure container has space */
+    min-height: 300px; 
   }
   
   .caption-overlay {
@@ -30,7 +30,7 @@
     margin: 0 0 5px 0;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Montserrat", sans-serif; 
     color: white;
   }
   
@@ -38,11 +38,10 @@
     margin: 0;
     font-size: 1rem;
     font-style: italic;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
   }
   
-  /* Keep your other CSS styles from your file */
   p {
       font-family: "Source Serif", serif;
       line-height: 180%;
@@ -114,43 +113,38 @@
     margin: 15px !important;
 }
 
-/* Add or modify these styles in wsp_style.css */
-
-/* --- Base Scrollytelling Styles (Keep these) --- */
 body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
-    filter: blur(5px); /* Adjust blur amount as needed */
-    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
-    opacity: 0.7; /* Optional: fade non-focused elements slightly */
+    filter: blur(5px); 
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+    opacity: 0.7; 
   }
   
   .scrollytelling-focus {
-    filter: none !important; /* Ensure focused elements are not blurred */
-    opacity: 1 !important; /* Ensure focused elements are fully visible */
-    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    filter: none !important; 
+    opacity: 1 !important; 
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; 
   }
   
-  /* --- Styling for Text Boxes --- */
-  /* General text box styling */
   .text-box-1, .text-box-2, .text-box-3, .text-box-4 {
     border: solid #666666 4px;
-    padding: 40px 20px !important;  /* Base vertical/horizontal padding */
-    margin: 50px 15px !important;   /* Base vertical/horizontal margin */
-    min-height: 150px;          /* Base minimum height */
-    opacity: 0.7 !important;       /* Start semi-transparent */
-    transition: opacity 0.5s ease-in-out; /* Add transition for focus */
-    text-align: center; /* Match your site fonts */
+    padding: 40px 20px !important;  
+    margin: 50px 15px !important;  
+    min-height: 150px;        
+    opacity: 0.7 !important;       
+    transition: opacity 0.5s ease-in-out; 
+    text-align: center; 
   }
   
-  /* Specific adjustments for text-box-1 if needed for longer duration */
+
   .text-box-1 {
-    padding-top: 80px !important;    /* More padding for duration */
-    padding-bottom: 80px !important; /* More padding for duration */
-    margin-top: 60px !important;     /* More margin for duration */
-    margin-bottom: 60px !important;  /* More margin for duration */
-    min-height: 200px;             /* More min-height */
+    padding-top: 80px !important;    
+    padding-bottom: 80px !important; 
+    margin-top: 60px !important;    
+    margin-bottom: 60px !important;  
+    min-height: 200px;           
   }
   
-  /* Ensure focused text boxes are fully opaque */
+  
   .text-box-1.scrollytelling-focus,
   .text-box-2.scrollytelling-focus,
   .text-box-3.scrollytelling-focus,
@@ -158,23 +152,22 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
       opacity: 1 !important;
   }
   
-  /* Class for text style inside boxes (from your existing CSS) */
+  
   .text-box-text {
-      font-family: "Poppins", sans-serif !important;
+      font-family: "Montserrat", sans-serif !important;
       font-weight: 100px !important;
       font-size: 20px !important;
       color: black;
   }
   
-  /* --- Styling for Charts --- */
+  
   #chart_1, #chart_2, #chart_3 {
-      margin-top: 5vh; /* Add some vertical space before charts */
-      margin-bottom: 5vh; /* Add some vertical space after charts */
+      margin-top: 5vh; 
+      margin-bottom: 5vh; 
       margin-left: 10vh;
       margin-right: 10vh;
       transition: opacity 0.5s ease-in-out;
-      opacity: 0.7; /* Start charts slightly faded */
-      /* Ensure images within chart divs scale correctly */
+      opacity: 0.7; 
       img {
           max-width: 100%;
           height: auto;
@@ -188,7 +181,7 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
       margin-right: 10vh;
   }
   
-  /* Ensure focused charts are fully opaque */
+ 
   #chart_1.scrollytelling-focus,
   #chart_2.scrollytelling-focus,
   #chart_3.scrollytelling-focus {
@@ -210,7 +203,7 @@ body.scrollytelling-active > *:not(.scrollytelling-focus):not(nav):not(footer) {
  }
 
  .static-chart-subhead {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 14px;
  }
